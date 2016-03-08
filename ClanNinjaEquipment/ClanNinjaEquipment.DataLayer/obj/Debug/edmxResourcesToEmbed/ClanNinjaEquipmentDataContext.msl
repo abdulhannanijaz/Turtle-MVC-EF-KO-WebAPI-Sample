@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ClanNinjaEquipmentModelStoreContainer" CdmEntityContainer="TurtleEntities">
+    <EntitySetMapping Name="Clan">
+      <EntityTypeMapping TypeName="ClanNinjaEquipmentModel.Clan">
+        <MappingFragment StoreEntitySet="Clan">
+          <ScalarProperty Name="ClanID" ColumnName="ClanID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SymbolPic" ColumnName="SymbolPic" />
+          <ScalarProperty Name="IsEvil" ColumnName="IsEvil" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ClanGUID" ColumnName="ClanGUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="ClanNinjaEquipmentModel.Clan">
+        <ModificationFunctionMapping>
+          <InsertFunction FunctionName="ClanNinjaEquipmentModel.Store.uspClanInsert">
+            <ScalarProperty Name="CreatedBy" ParameterName="CreatedBy" />
+            <ScalarProperty Name="IsEvil" ParameterName="IsEvil" />
+            <ScalarProperty Name="SymbolPic" ParameterName="SymbolPic" />
+            <ScalarProperty Name="Name" ParameterName="Name" />
+          </InsertFunction>
+          <UpdateFunction FunctionName="ClanNinjaEquipmentModel.Store.uspClanUpdate">
+            <ScalarProperty Name="ClanGUID" ParameterName="ClanGUID" Version="Current" />
+            <ScalarProperty Name="CreatedBy" ParameterName="CreatedBy" Version="Current" />
+            <ScalarProperty Name="IsEvil" ParameterName="IsEvil" Version="Current" />
+            <ScalarProperty Name="SymbolPic" ParameterName="SymbolPic" Version="Current" />
+            <ScalarProperty Name="Name" ParameterName="Name" Version="Current" />
+          </UpdateFunction>
+          <DeleteFunction FunctionName="ClanNinjaEquipmentModel.Store.uspClanDelete">
+            <ScalarProperty Name="ClanGUID" ParameterName="ClanGUID" />
+          </DeleteFunction>
+        </ModificationFunctionMapping>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Equipment">
+      <EntityTypeMapping TypeName="ClanNinjaEquipmentModel.Equipment">
+        <MappingFragment StoreEntitySet="Equipment">
+          <ScalarProperty Name="EquipmentID" ColumnName="EquipmentID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ninja">
+      <EntityTypeMapping TypeName="ClanNinjaEquipmentModel.Ninja">
+        <MappingFragment StoreEntitySet="Ninja">
+          <ScalarProperty Name="NinjaID" ColumnName="NinjaID" />
+          <ScalarProperty Name="ClanID" ColumnName="ClanID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsExperienced" ColumnName="IsExperienced" />
+          <ScalarProperty Name="IsAlive" ColumnName="IsAlive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="NinjaGUID" ColumnName="NinjaGUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NinjaEquipment">
+      <EntityTypeMapping TypeName="ClanNinjaEquipmentModel.NinjaEquipment">
+        <MappingFragment StoreEntitySet="NinjaEquipment">
+          <ScalarProperty Name="NinjaEquipmentID" ColumnName="NinjaEquipmentID" />
+          <ScalarProperty Name="EquipmentID" ColumnName="EquipmentID" />
+          <ScalarProperty Name="NinjaID" ColumnName="NinjaID" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsSpecial" ColumnName="IsSpecial" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="NinjaEquipmentGUID" ColumnName="NinjaEquipmentGUID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="uspClanCount" FunctionName="ClanNinjaEquipmentModel.Store.uspClanCount" />
+    <FunctionImportMapping FunctionImportName="uspClanDelete" FunctionName="ClanNinjaEquipmentModel.Store.uspClanDelete" />
+    <FunctionImportMapping FunctionImportName="uspClanInsert" FunctionName="ClanNinjaEquipmentModel.Store.uspClanInsert" />
+    <FunctionImportMapping FunctionImportName="uspClanList" FunctionName="ClanNinjaEquipmentModel.Store.uspClanList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ClanNinjaEquipmentModel.uspClanList_Result">
+          <ScalarProperty Name="ClanID" ColumnName="ClanID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SymbolPic" ColumnName="SymbolPic" />
+          <ScalarProperty Name="IsEvil" ColumnName="IsEvil" />
+          <ScalarProperty Name="ClanGUID" ColumnName="ClanGUID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uspClanSelect" FunctionName="ClanNinjaEquipmentModel.Store.uspClanSelect">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ClanNinjaEquipmentModel.uspClanSelect_Result">
+          <ScalarProperty Name="ClanID" ColumnName="ClanID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SymbolPic" ColumnName="SymbolPic" />
+          <ScalarProperty Name="IsEvil" ColumnName="IsEvil" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ClanGUID" ColumnName="ClanGUID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uspClanUpdate" FunctionName="ClanNinjaEquipmentModel.Store.uspClanUpdate" />
+    <FunctionImportMapping FunctionImportName="uspNinjaCount" FunctionName="ClanNinjaEquipmentModel.Store.uspNinjaCount" />
+    <FunctionImportMapping FunctionImportName="uspNinjaDelete" FunctionName="ClanNinjaEquipmentModel.Store.uspNinjaDelete" />
+    <FunctionImportMapping FunctionImportName="uspNinjaInsert" FunctionName="ClanNinjaEquipmentModel.Store.uspNinjaInsert" />
+    <FunctionImportMapping FunctionImportName="uspNinjaList" FunctionName="ClanNinjaEquipmentModel.Store.uspNinjaList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ClanNinjaEquipmentModel.uspNinjaList_Result">
+          <ScalarProperty Name="NinjaID" ColumnName="NinjaID" />
+          <ScalarProperty Name="Clan" ColumnName="Clan" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="IsExperienced" ColumnName="IsExperienced" />
+          <ScalarProperty Name="IsAlive" ColumnName="IsAlive" />
+          <ScalarProperty Name="NinjaGUID" ColumnName="NinjaGUID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uspNinjaSelect" FunctionName="ClanNinjaEquipmentModel.Store.uspNinjaSelect">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ClanNinjaEquipmentModel.uspNinjaSelect_Result">
+          <ScalarProperty Name="NinjaID" ColumnName="NinjaID" />
+          <ScalarProperty Name="ClanID" ColumnName="ClanID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsExperienced" ColumnName="IsExperienced" />
+          <ScalarProperty Name="IsAlive" ColumnName="IsAlive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="NinjaGUID" ColumnName="NinjaGUID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uspNinjaUpdate" FunctionName="ClanNinjaEquipmentModel.Store.uspNinjaUpdate" />
+  </EntityContainerMapping>
+</Mapping>
