@@ -23,6 +23,10 @@ namespace ClanNinjaEquipment.Web
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+            // to add knock out js
+            bundles.Add(new ScriptBundle("~/bundles/app").Include(
+                      "~/Scripts/knockout-{version}.js",
+                      "~/Scripts/app.js"));
         }
     }
 }

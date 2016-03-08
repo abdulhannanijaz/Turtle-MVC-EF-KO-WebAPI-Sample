@@ -15,17 +15,15 @@ namespace ClanNinjaEquipment.Web.Controllers
 {
     public class ClansController : ApiController
     {
-        private TurtleEntities db;
+        private TurtleEntities db = new TurtleEntities();
 
-        public ClansController()
-        {
-            db = new TurtleEntities();
-        }
+
 
         // GET: api/Clans
-        public IQueryable<Clan> GetClan()
+        public IQueryable<uspClanList_Result> GetClan()
         {
-            return db.Clan;
+            return db.uspClanList().AsQueryable();
+           
         }
 
         // GET: api/Clans/5

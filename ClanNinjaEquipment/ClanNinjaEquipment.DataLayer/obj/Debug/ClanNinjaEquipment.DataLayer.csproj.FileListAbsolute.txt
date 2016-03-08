@@ -5,6 +5,5 @@ F:\GITHUB\Turtle-MVC-EF-KO-WebAPI-Sample\ClanNinjaEquipment\ClanNinjaEquipment.D
 F:\GITHUB\Turtle-MVC-EF-KO-WebAPI-Sample\ClanNinjaEquipment\ClanNinjaEquipment.DataLayer\bin\Debug\EntityFramework.SqlServer.dll
 F:\GITHUB\Turtle-MVC-EF-KO-WebAPI-Sample\ClanNinjaEquipment\ClanNinjaEquipment.DataLayer\bin\Debug\EntityFramework.xml
 F:\GITHUB\Turtle-MVC-EF-KO-WebAPI-Sample\ClanNinjaEquipment\ClanNinjaEquipment.DataLayer\bin\Debug\EntityFramework.SqlServer.xml
-F:\GITHUB\Turtle-MVC-EF-KO-WebAPI-Sample\ClanNinjaEquipment\ClanNinjaEquipment.DataLayer\obj\Debug\ClanNinjaEquipment.DataLayer.csprojResolveAssemblyReference.cache
 F:\GITHUB\Turtle-MVC-EF-KO-WebAPI-Sample\ClanNinjaEquipment\ClanNinjaEquipment.DataLayer\obj\Debug\ClanNinjaEquipment.DataLayer.dll
 F:\GITHUB\Turtle-MVC-EF-KO-WebAPI-Sample\ClanNinjaEquipment\ClanNinjaEquipment.DataLayer\obj\Debug\ClanNinjaEquipment.DataLayer.pdb
