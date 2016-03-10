@@ -2,17 +2,88 @@
     @Scripts.Render("~/bundles/app")
 }
 
+
+
 <div class="page-header">
     <h1>ClansService</h1>
 </div>
 
-<div class="row" data-bind="foreach: clans" >
+<div class="row">
 
-    <div class="col-lg-3">
-        <div class="thumbnail">
-            <h3 data-bind="text: Name"></h3>
-            <a href="#"><span class="glyphicon glyphicon-expand" ></span>Details</a>
+    <div class="col-lg-4">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h1 class="panel-tit">
+                    Clan <small>List</small>
+                </h1>
+            </div>
+            <div class="panel-body">
+                <ul class="list-unstyled" data-bind="foreach: clans">
+                    <li>
+                        <strong data-bind="text: Name"></strong>
+                        <i data-bind="text: ClanID"></i>
+                        <small><a href="#" data-bind="click: $parent.getClanDetail" class="btn btn-link">Details</a></small>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="panel-footer">
+                <p data-bind="text: error"></p>
+                <p>Called From Service</p>
+            </div>
 
         </div>
     </div>
+
+
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2 class="panel-title">Detail</h2>
+            </div>
+            <table class="table">
+                <tr><td>Name</td><td data-bind="text: detail().Name"></td></tr>
+                <tr><td>SymbolPic</td><td data-bind="text: detail().SymbolPic"></td></tr>
+                <tr><td>IsEvil</td><td data-bind="text: detail().IsEvil"></td></tr>
+                <tr><td>ClanID</td><td data-bind="text: detail().ClanID"></td></tr>
+                <tr><td>ClanGUID</td><td data-bind="text: detail().ClanGUID"></td></tr>
+            </table>
+        </div>
+    </div>
+
+
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2 class="panel-title">Add Book</h2>
+            </div>
+
+            <div class="panel-body">
+                <form class="form-horizontal" data-bind="submit: addClan">
+
+                    <div class="form-group" data-bind="with: newclan">
+                        <input id="inputName" class="form-control" type="text" data-bind="value:Name"/>
+
+                        <input id="inputIsEvil" class="form-control" type="text" data-bind="value:IsEvil"/>
+
+                        <input id="inputSymbolPic" class="form-control" type="text" data-bind="value:SymbolPic"/>
+
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-sm">Save</button>
+                </form>
+
+
+
+
+            </div>
+
+            <div class="panel-footer">
+                <p data-bind="text: success"></p>
+            </div>
+        </div>
+    </div>
+
+
 </div>

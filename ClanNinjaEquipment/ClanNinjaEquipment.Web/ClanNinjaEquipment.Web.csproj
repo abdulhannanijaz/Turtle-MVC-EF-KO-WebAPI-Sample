@@ -209,6 +209,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ClansController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="DTO\ClansDTO.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -280,10 +281,11 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Clans\List.cshtml" />
+    <Content Include="Views\Shared\_ClanList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Clans\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

@@ -7,3 +7,13 @@ F:\GITHUB\Turtle-MVC-EF-KO-WebAPI-Sample\ClanNinjaEquipment\ClanNinjaEquipment.D
 F:\GITHUB\Turtle-MVC-EF-KO-WebAPI-Sample\ClanNinjaEquipment\ClanNinjaEquipment.DataLayer\bin\Debug\EntityFramework.SqlServer.xml
 F:\GITHUB\Turtle-MVC-EF-KO-WebAPI-Sample\ClanNinjaEquipment\ClanNinjaEquipment.DataLayer\obj\Debug\ClanNinjaEquipment.DataLayer.dll
 F:\GITHUB\Turtle-MVC-EF-KO-WebAPI-Sample\ClanNinjaEquipment\ClanNinjaEquipment.DataLayer\obj\Debug\ClanNinjaEquipment.DataLayer.pdb
+E:\GITHUB\Turtle-MVC-EF-KO-WebAPI-Sample\ClanNinjaEquipment\ClanNinjaEquipment.DataLayer\bin\Debug\ClanNinjaEquipment.DataLayer.dll.config
+E:\GITHUB\Turtle-MVC-EF-KO-WebAPI-Sample\ClanNinjaEquipment\ClanNinjaEquipment.DataLayer\bin\Debug\ClanNinjaEquipment.DataLayer.dll
+E:\GITHUB\Turtle-MVC-EF-KO-WebAPI-Sample\ClanNinjaEquipment\ClanNinjaEquipment.DataLayer\bin\Debug\ClanNinjaEquipment.DataLayer.pdb
+E:\GITHUB\Turtle-MVC-EF-KO-WebAPI-Sample\ClanNinjaEquipment\ClanNinjaEquipment.DataLayer\bin\Debug\EntityFramework.dll
+E:\GITHUB\Turtle-MVC-EF-KO-WebAPI-Sample\ClanNinjaEquipment\ClanNinjaEquipment.DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+E:\GITHUB\Turtle-MVC-EF-KO-WebAPI-Sample\ClanNinjaEquipment\ClanNinjaEquipment.DataLayer\bin\Debug\EntityFramework.xml
+E:\GITHUB\Turtle-MVC-EF-KO-WebAPI-Sample\ClanNinjaEquipment\ClanNinjaEquipment.DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+E:\GITHUB\Turtle-MVC-EF-KO-WebAPI-Sample\ClanNinjaEquipment\ClanNinjaEquipment.DataLayer\obj\Debug\ClanNinjaEquipment.DataLayer.csprojResolveAssemblyReference.cache
+E:\GITHUB\Turtle-MVC-EF-KO-WebAPI-Sample\ClanNinjaEquipment\ClanNinjaEquipment.DataLayer\obj\Debug\ClanNinjaEquipment.DataLayer.dll
+E:\GITHUB\Turtle-MVC-EF-KO-WebAPI-Sample\ClanNinjaEquipment\ClanNinjaEquipment.DataLayer\obj\Debug\ClanNinjaEquipment.DataLayer.pdb
